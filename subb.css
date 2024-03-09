@@ -1,0 +1,160 @@
+body {
+    font-family: Rockwell;
+    margin: auto;
+    background-color: ghostwhite;
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #B9B7B6;
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #dddddd;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #C7E7F3;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: #214559;
+    align-items: center;
+    color: white;
+    height: 100px;
+}
+
+h1{
+    margin-top: 50px;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #B9B7B6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.logo{
+    width: 75px;
+    height: 75px;
+}
+.logotekst{
+    display: flex;
+    align-items: center;
+}
+
+main {
+    height: 700px;
+    width: fit-content;
+
+    margin: 150px;
+}
+
+
+h3 {
+    color: #FF8C00;
+    font-size: larger;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: last;
+    color: #FF8C00;
+    margin-top: 50px;
+}
+#foot{
+    background-color: #78B88F;
+    color: white;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+.contact{
+    width: 50px;
+    background-color: #78B88F;
+    margin: 10px;
+}
+#siva{
+    background-color: #78B88F;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+#siva h3{
+    color: white;
+}
+script{
+    font-size: larger;
+}
+.slika{
+    width: 100%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+
+}
