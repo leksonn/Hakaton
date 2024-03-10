@@ -135,18 +135,46 @@ main {
 }
 
 .kockice {
-    padding: 30px;
-    background-color: #dddddd;
-    text-align: center;
-    margin: 5px;
-    width: 300px;
-    height: 175px;
-    border-radius: 15px;
-    border: solid #78B88F;
-    margin: auto;
-
-
+    display: flex;
+    align-items: start; /* Aligns items to the start of the container */
+    justify-content: start;
+    width: 300px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex-direction: column; /* Stack items vertically */
 }
+.kockice:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.kockice img {
+    margin-right: 15px;
+}
+main#abt {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates a responsive grid layout */
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+}
+
+.kockice h3 {
+    font-size: 1.2em;
+    color: #333; /* A darker shade for the text */
+    margin-bottom: 5px;
+}
+
+.kockice p {
+    font-size: 1em;
+    color: #666; /* A lighter shade for the paragraph */
+}
+
 
 .lorem {
     font-size: small;
@@ -160,7 +188,6 @@ h3 {
 h2{
     display: flex;
     justify-content: center;
-    align-items: last;
     color: #FF8C00;
     margin-top: 50px;
 }

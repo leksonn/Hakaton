@@ -112,33 +112,41 @@ main{
     padding: 20px;
     margin: 100px;
 }
-#child{
-    width: 200px;
-    background-color: rgba(33,69,89, 0.3);
-    border-radius: 20px;
-    border: solid #FF8C00;
+#child {
+    background: white;
     padding: 20px;
-    display: flex;
-    justify-content: center;
-
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjust width as needed */
 }
-button{
-    background-color: azure;
-    color: #FF8C00;
-    border-radius: 15px;
-    width: 100px;
-    height: 50px;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: Rockwell;
-    margin-top: 15px;
-    border: solid #FF8C00;
+button[type=submit] {
+    width: 100%;
+    background-color: #FF8C00;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-input{
-    margin: 15px 0;
 
+button[type=submit]:hover {
+    background-color: #214559;
+}
+
+input[type=text], input[type=password] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 a{
     text-decoration: none;
 
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

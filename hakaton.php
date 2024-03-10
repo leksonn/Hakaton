@@ -72,7 +72,7 @@
     <div class="kockice">
         <img src="icons8-student-registration-30%20copy%203.png">
         <h3> Individual approach </h3>
-        <p class="lorem"> Unlock Your Academic Potential with Personalized Assignments! Our innovative app tailors tasks to your unique strengths and weaknesses, helping you excel in every subject! </p>
+        <p class="lorem"> Unlock Your Academic Potential with Personalized Assignments! Our  app tailors tasks to your unique strengths and weaknesses. </p>
     </div>
 </main>
 

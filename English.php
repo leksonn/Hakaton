@@ -86,7 +86,7 @@ $myString = "Hello, world!";
                 frequency_penalty: 0.0,
                 presence_penalty: 0.0,
                 messages:[{"role":"system", "content": "You are a helpful assistant. "},
-                    {"role":"user", "content": "You are an expert in english language, Give me a grammar task with multiple choice answers. "}
+                    {"role":"user", "content": "You are an expert in english language, Give me a grammar task with multiple choice answers. Format the response so each multiple choice answer is in a separate line using br html tag, and put only the question and answers in the response"}
 
                 ]
             };
@@ -96,13 +96,16 @@ $myString = "Hello, world!";
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
-                        'Authorization': 'Bearer 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',
+                        'Authorization': 'Bearer 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',
                     },
                     body: JSON.stringify(data),
                 });
                 const responseData = await response.json();
 
-                document.getElementById("apiResponse").innerHTML = responseData.choices[0].message.content;
+                var formattedContent = responseData.choices[0].message.content;
+
+// Set the innerHTML of the element with the id 'apiResponse' to the formatted content
+                document.getElementById("apiResponse").innerHTML = formattedContent;
             } catch (error) {
                 console.error('Error:', error);
             }

@@ -1,3 +1,9 @@
+<?php
+$myString = "Hello, world!";
+
+
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -46,7 +52,9 @@
     </div>
 </header>
 <main>
+    <div id="apiResponse">
 
+    </div>
 </main>
 <div id="foot">
     <section id="siva">
@@ -63,8 +71,46 @@
 
 <footer>
     <script>
-        date = new Date().toLocaleDateString();
-        document.write(date);
+        document.write(new Date().toLocaleDateString());
+
+        async function fetchDataFromAPI() {
+            const data = {
+                model: "gpt-3.5-turbo", //model koji koristi chat gpt
+
+                temperature: 0.7,
+                max_tokens: 100,
+                top_p: 1.0,
+                frequency_penalty: 0.0,
+                presence_penalty: 0.0,
+                messages:[{"role":"system", "content": "You are a helpful assistant. "},
+                    {"role":"user", "content": "You are an expert in Mathematics, Give me a math task with multiple choice answers. Format the response so each multiple choice answer is in a separate line using br html tag, and put only the question and answers in the response"}
+
+                ]
+            };
+
+            try {
+                const response = await fetch('https://api.openai.com/v1/chat/completions',  { //ruta koju pozivamo za model
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer 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',
+                    },
+                    body: JSON.stringify(data),
+                });
+                const responseData = await response.json();
+
+                var formattedContent = responseData.choices[0].message.content;
+
+// Set the innerHTML of the element with the id 'apiResponse' to the formatted content
+                document.getElementById("apiResponse").innerHTML = formattedContent;
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        }
+
+        fetchDataFromAPI();
+
+
     </script>
 </footer>
 </body>

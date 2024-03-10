@@ -45,7 +45,7 @@ if (isset($_POST['username'])) {
     <main>
         <section id="child">
             <form action="log.php" method="post">
-                <h2>LOG IN</h2>
+                <h2>Log In</h2>
                 <?php if (isset($error)) { ?>
                     <p class="error"><?php echo $error; ?></p>
                 <?php } ?>

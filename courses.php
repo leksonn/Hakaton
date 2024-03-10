@@ -46,15 +46,23 @@
     </div>
 </header>
 <br>
-<br>
 <h1>Select a course</h1>
-<br>
-<br>
 <main>
+    <div class="ikonice">
+        <img src="icons8-english-50.png">
+        <br>
     <a href="English.php"> <button class="dugme" onclick="">English</button> </a>
+    </div>
+    <div class="ikonice">
+        <img src="icons8-math-50.png">
+        <br>
     <a href="Math.php"> <button class="dugme" onclick="">Math</button></a>
+    </div>
+        <div class="ikonice">
+            <img src="icons8-experiment-50.png">
+            <br>
     <a href="Science.php" > <button class="dugme" onclick="">Science</button> </a>
-
+        </div>
 
 </main>
 <div id="foot">
